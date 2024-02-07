@@ -1,0 +1,26 @@
+<app-dashboard></app-dashboard>
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Request-Date</th>
+        <th>Name</th>
+        <th>Phone-no</th>
+        <th>EmailAddress</th>
+        <th>Services</th>
+        <th>Message</th>
+       
+       </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.date }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{user.phoneNumber}}</td>
+        <td> {{ user.email }}</td>
+        <td> {{ user.service }}</td>
+        <td>{{ user.message }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dashboard {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.name-list {
+    list-style: none;
+    padding: 0;
+}
+h1{
+    font-family: cursive;
+    color: aqua;
+}
+
+li:hover {
+    color: #0ccd26;
+   
+  }

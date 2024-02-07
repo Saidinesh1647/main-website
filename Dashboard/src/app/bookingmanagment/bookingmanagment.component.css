@@ -1,0 +1,47 @@
+* {
+  background-color: rgb(255, 251, 248);
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+table {
+  width: 60%;
+  border-collapse: collapse;
+  margin: 100px;
+  margin-left: 300px;
+}
+
+th, td {
+  padding: 6px;
+  text-align: left;
+  border: 1px solid #080808;
+}
+
+th {
+  color: rgb(20, 16, 209);
+}
+
+tr:hover {
+  background-color: #eceaea;
+ 
+}
+
+/* thead {
+  border-bottom: 2px solid black; /* Adjust the color and thickness of the line as needed */
+/* } */ */
+
+tr:nth-child(even) {
+  background-color: #161515;
+}
+
+/* Remove background-color and adjust border properties for minimal lines */
+th, td {
+  background-color:transparent;
+}
+
+tr {
+  background-color:transparent;
+}
