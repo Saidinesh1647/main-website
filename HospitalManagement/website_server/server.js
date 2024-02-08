@@ -15,7 +15,7 @@ const bookserviceSchema = new mongoose.Schema({
   phoneNumber: {type: String, required: true,  match: /^[0-9]{10}$/ },
   email: { type: String, match: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
   service:  {type: String, required: true},
-  message: { type: String, required: true, minlength: 10, maxlength: 500,},
+  message: { type: String, minlength: 0, maxlength: 500,},
 },{
   toJSON: { virtuals: true },
   toObject: { virtuals: true },

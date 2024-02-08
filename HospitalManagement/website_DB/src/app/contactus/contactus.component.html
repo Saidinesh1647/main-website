@@ -45,12 +45,15 @@
             <form (submit)="submitContactForm()">
               <div>
                 <input type="text" id="name"  [(ngModel)]="formData.name" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="Your Name" required/>
+                <div class="alert" *ngIf="nameError">{{ nameError }}</div>
               </div>
               <div>
                 <input type="tel" id="number"  [(ngModel)]="formData.phoneNumber" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="Phone Number" required/>
+                <div class="alert" *ngIf="numberError">{{ numberError }}</div>
               </div>
               <div>
                 <input type="email" id="email"  [(ngModel)]="formData.email" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="Your Email"/>
+                <div class="alert" *ngIf="emailError">{{ emailError }}</div>
               </div>
               <div>
                 <select class="form-control nice-select wide" id="service"  [(ngModel)]="formData.service" [ngModelOptions]="{standalone: true}" required>
@@ -92,15 +95,17 @@
                     Counceling
                   </option>
                 </select>
+                <div class="alert" *ngIf="serviceError"><p>{{ serviceError }}</p></div>
               </div>
               <div>
                 <input type="text" id="message"  [(ngModel)]="formData.message" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="What can we help you with?" required/>
+                <div class="alert" *ngIf="messageError">{{ messageError }}</div>
               </div>
               
 
-              <div *ngIf="errorMessage" class="error-message" style="color: red;">
+              <!-- <div *ngIf="errorMessage" class="error-message" style="color: red;">
                 <p>{{ errorMessage }}</p>
-              </div>
+              </div> -->
               
               <div *ngIf="successMessage" class="success-message">
                 <p>{{ successMessage }}</p>

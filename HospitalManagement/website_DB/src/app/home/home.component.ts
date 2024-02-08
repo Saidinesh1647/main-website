@@ -144,6 +144,11 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   };
 
   formSubmitted = false;
+  nameError = '';
+  numberError = '';
+  emailError = '';
+  serviceError = '';
+  messageError = '';
   errorMessage = '';
   successMessage = '';
 
@@ -248,18 +253,18 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     console.log('Booking service...');
   }
 
-
+  //bookservice form section
   submitContactForm() {
     // Reset messages on each form submission
     this.errorMessage = '';
     this.successMessage = '';
 
-    // Check form data for validation errors
-    if (!this.isValidFormData()) {
-      // Display a generic error message for invalid data
-      this.errorMessage = 'Invalid input. Please check your form data.';
+    // Reset all error messages
+    this.resetErrorMessages();
+
+     // Check form data for validation errors
+     if (!this.isValidFormData()) {
       this.formSubmitted = true;
-      
       return;
     }
 
@@ -284,9 +289,22 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
         console.error('Error submitting form:', error);
         this.errorMessage = 'Failed to submit the form. Please try again later.';
         this.formSubmitted = true;
+        
       }
     );
   }
+
+  resetErrorMessages() {
+    // Reset all error messages
+    this.nameError = '';
+    this.numberError = '';
+    this.emailError = '';
+    this.serviceError='';
+    this.messageError = '';
+
+    // Reset other error messages...
+  }
+
 
   resetForm() {
     // Reset the form data after successful submission
@@ -300,16 +318,55 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   }
 
   isValidFormData(): boolean {
+
     // Add your validation logic here
-    // For example, check if required fields are filled
-    return (
-      this.formData.name.trim() !== '' &&
-      this.formData.phoneNumber.trim() !== '' &&
-      this.formData.email.trim() !== '' &&
-      this.formData.service.trim() !== '' &&
-      this.formData.message.trim() !== ''
-    );
-  }
+   // For example, check if required fields are filled
+  
+   // Name validation
+   if (this.formData.name.trim() === '') {
+     this.nameError = 'Name is required.';
+     return false;
+   } else if (this.formData.name.trim().length < 3 || this.formData.name.trim().length > 15) {
+     this.nameError = 'Name length should be between 3 and 15 characters.';
+     return false;
+   } else if (!/^[a-zA-Z\s]+$/.test(this.formData.name.trim())) {
+     this.nameError = 'Name should only contain letters and spaces.';
+     return false;
+   }
+
+   // Phone number validation
+   if (this.formData.phoneNumber.trim() === '') {
+     this.numberError = 'Phone Number is required';
+     return false;
+   } else if (/[a-zA-Z]/.test(this.formData.phoneNumber.trim())) {
+     this.numberError = 'Phone number should contain only numbers.';
+     return false;
+   } else if (!/^[0-9]{10}$/.test(this.formData.phoneNumber.trim())) {
+     this.numberError = 'Phone number should contain 10 digits.';
+     return false;
+   
+   }
+
+   // Email validation
+   if (this.formData.email.trim() !== '' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.formData.email.trim())) {
+     this.emailError = 'Please enter a valid email address.';
+     return false;
+   }
+
+   // Service validation
+   if (this.formData.service.trim() === '' || this.formData.service === null) {
+     this.serviceError = 'Please select the service.';
+     return false;
+   }
+
+   // Message validation
+   if (this.formData.message.trim() !== '' && (this.formData.message.trim().length < 5 || this.formData.message.trim().length > 500)) {
+     this.messageError = 'Message length should be between 5 and 500 characters.';
+     return false;
+   }
+
+   return true;
+ }
   
 
 }
