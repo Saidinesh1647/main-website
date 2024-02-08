@@ -7,7 +7,6 @@ import { Component,OnInit } from '@angular/core';
 })
 export class ServicesComponent implements OnInit{
   services =[
-      
     {
       dataCategory: 'nurse',
       title: 'Skilled Nursing',
@@ -77,13 +76,12 @@ export class ServicesComponent implements OnInit{
   ];
 
  filteredServices = this.services;
-  activeFilter: string = 'all'; // Default to 'all' to show all services
+  activeFilter: string = 'all';
 
   filterServices(category: string): void {
     this.activeFilter = category;
-
     if (category === 'all') {
-      this.filteredServices = this.services; // Show all services for 'all' category
+      this.filteredServices = this.services; 
     } else {
       this.filteredServices = this.services.filter(service => service.dataCategory === category);
     }
@@ -94,5 +92,3 @@ export class ServicesComponent implements OnInit{
   }
 
 }
-
-

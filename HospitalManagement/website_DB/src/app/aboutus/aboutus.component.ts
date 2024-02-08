@@ -7,9 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AboutusComponent {
   showFullContent=false;
-
   toggleContent(){
     this.showFullContent=!this.showFullContent;
   }
-
 }

@@ -5,7 +5,6 @@ import { Observable,of, pipe } from 'rxjs';
 import { tap, map } from 'rxjs/operators';
 import { catchError } from 'rxjs/operators';
 
-
 @Injectable({
   providedIn: 'root',
 })
@@ -16,12 +15,8 @@ export class ContactUsService {
   constructor(private http: HttpClient) {}
 
   submitForm(): Observable<any> {
-    // Add logic for form submission if needed
-
-    // For now, just mark the form as submitted
     this.formSubmitted = true;
-
-    // Reset the formSubmitted status after a delay (2 seconds in this example)
+ 
     setTimeout(() => {
       this.formSubmitted = false;
     }, 2000); 
@@ -33,7 +28,6 @@ export class ContactUsService {
     return this.formSubmitted;
   }
 
-
   submitContactForm(formData: any): Observable<any> {
     // return this.http.post<any>(this.serverUrl, formData);
     return this.http.post('http://localhost:3000/addbookservice/submit', formData)
@@ -43,7 +37,7 @@ export class ContactUsService {
       }),
       catchError((error: any) => {
         console.error('Error from Server:', error);
-        throw error; // Rethrow the error for further handling
+        throw error;
       })
     );
   }

@@ -12,7 +12,6 @@ const routes: Routes = [
   {path:'aboutus',component:AboutusComponent},
   {path:'contactus',component:ContactusComponent},
   //{path:'bookservice',component:BookserviceComponent}
-
 ];
 
 @NgModule({

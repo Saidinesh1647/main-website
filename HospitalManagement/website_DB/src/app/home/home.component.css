@@ -4,7 +4,6 @@
     height: 600px;
     object-position: 100%;
     object-fit: cover;
-
 }
 
 .btn
@@ -22,8 +21,6 @@
 {
   background-color:#eead20;
 }
-
-/* Add these styles to your component's CSS file */
 
 .contact-icons {
   margin-top: 20px;
@@ -46,9 +43,8 @@
 
 .background-container {
     position: relative;
-    height: 600px; /* Adjust the height as needed */
-    /* background: url('../../assets/bg.png') center/cover; */
-    overflow: hidden; /* Ensure overflow is hidden to avoid scrolling */
+    height: 600px; 
+    overflow: hidden; 
     margin-bottom: 40px;
   }
   
@@ -56,24 +52,21 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 40%; /* Adjust the width of the overlay */
+    width: 40%; 
     height: 100%;
     margin-left: 130px;
-    background: rgb(72, 72, 72); /* Adjust the overlay color and opacity as needed */
+    background: rgb(72, 72, 72); 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Align text to the left */
+    align-items: flex-start; 
     padding: 20px;
     color: white;
     box-sizing: border-box;
   }
   
   .text-container {
-    max-width: 80%; /* Adjust the max-width of the text container */
-    /* animation: fadeInLeft 1s forwards; Adjust the animation duration */
-  /* opacity: 0;
-  transform: translateX(-20px); Adjust the initial horizontal position */
+  max-width: 80%; 
   position: relative;
   animation: fadeInLeft 1s forwards;
   }
@@ -105,8 +98,6 @@
     background-color: #ffffff;
     border-radius: 50%;
     margin: 0 5px;
-    /* animation: alternate;
-    animation: dotAnimation 1s infinite; Adjust the animation speed */
   }
   
   #dot1
@@ -114,7 +105,6 @@
     width: 15px;
     height: 15px;
   }
-
 
   @keyframes dotAnimation {
     0%, 100% {
@@ -127,7 +117,6 @@
 
 
   /* offer section */
-
   .scroll-section {
     display: flex;
     justify-content: space-around;
@@ -139,12 +128,10 @@
     width: 500px;
     border: 1px solid #ccc;
     padding: 20px;
-    /* margin: 0 10px; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-right: 0;
     color: #222831;
     background-color: #222831;
-    
   }
   
   .box-content {
@@ -170,12 +157,12 @@
   .image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
-    border-radius: 50%; /* Apply border-radius to the image as well */
+    object-fit: cover;
+    border-radius: 50%; 
   }
   
   .image-container:nth-child(2) {
-    margin-right: 0; /* Remove right margin for the second box */
+    margin-right: 0;
   }
   
   .info-container {
@@ -192,25 +179,18 @@
   }
   
   .discount {
-    /* background-color: #e74c3c; */
     color: #f3f3f3;
     margin: 7px 0;
-    font-size: 1.0em; /* Increase font size */
-    
+    font-size: 1.0em;
   }
   
   .highlighted-discount {
-    font-size: 2em; /* Bigger font size for highlighted discount */
+    font-size: 2em;
     font-family: 'Dancing script',  cursive;
     font-weight: bold;
   }
   
-
-
-
   /* Our Services */
-
-
   .services-section {
     text-align: center;
     padding: 50px 0;
@@ -248,23 +228,7 @@
     background-color: #222831;
     color: white;
   }
-  
 
-  /* Additional styling for the service boxes */
-
-  
-/* .service-box {
-  background-color: red;
-  transition: transform 0.3s, box-shadow 0.3s;
-} */
-
-/* .service-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-} */
-
-  
-  
   .service-box {
     background-color: rgb(0, 0, 0);
     position:relative;
@@ -274,23 +238,17 @@
     padding: 0px;
     margin: 50px;
     text-align: center;
-    /* box-shadow: 0 0 10px rgba(120, 120, 120, 0.1); */
     transition: transform 0.3s;
     display: inline-block;
-    overflow: hidden; /* Ensure text container respects borders */
+    overflow: hidden;
   }
-  
-
-  
-  /* Add more styles as needed */
-
 
   .card-img-container {
     background-color: rgb(244, 244, 244);
     position: relative;
     width: 100%;
     height: 0;
-    padding-top: 100%; /* Set a square aspect ratio (adjust as needed) */
+    padding-top: 100%; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -302,8 +260,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%; /* Adjust the width of the square as needed */
-    height: 70%; /* Adjust the height of the square as needed */
+    width: 70%; 
+    height: 70%; 
     overflow: hidden;
     border-radius: 15px;
   }
@@ -316,7 +274,7 @@
   }
   
   .img-square:hover .card-img-top {
-    transform: scale(1.1); /* Increase the image size on hover */
+    transform: scale(1.1); 
   }
 
   .card-body
@@ -326,12 +284,10 @@
     
   }
 
-
-  /* AboutUS Starts here */
   /* About Us Section */
 .about-us-section {
-  background-color: #222831; /* Blue background color */
-  color: #ffffff; /* White text color */
+  background-color: #222831; 
+  color: #ffffff; 
   padding: 50px 0;
   margin-bottom: 80px;
 }
@@ -352,7 +308,6 @@
   margin-bottom: 20px;
 }
 
-
 .read-more-btn{
   background-color: #ffbe33;
   color: #ffffff;
@@ -367,13 +322,10 @@
 background-color: #eead20;
 }
 
-
 /* Book Service Section */
-
 .book_section {
   position: relative;
   margin-bottom: 70px;
-  
 }
 
 .book_section .heading_container {
@@ -436,12 +388,12 @@ background-color: #eead20;
 }
 
 .success-message {
-  background-color: #d4edda; /* Bootstrap success color */
-  color: #155724; /* Bootstrap dark green color */
-  border: 1px solid #c3e6cb; /* Bootstrap light green color */
+  background-color: #d4edda;
+  color: #155724; 
+  border: 1px solid #c3e6cb; 
   padding: 5px;
-  margin-top: 10px; /* Add some space between the message and the form */
-  border-radius: 5px; /* Optional: Add rounded corners */
+  margin-top: 10px; 
+  border-radius: 5px; 
   margin-bottom: 50px;
 }
 
@@ -469,15 +421,12 @@ background-color: #eead20;
 }
 
 /* client Section */
-
-
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #f4f4f4;
-  
 }
 
 .testimonials-section {
@@ -495,7 +444,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
-  max-width: 1000px; /* Increase the max-width to allow for larger boxes */
+  max-width: 1000px; 
   margin-left: auto;
   margin-right: auto;
 }
@@ -509,7 +458,6 @@ body {
   margin-bottom: 0;
   font-size: 15px;
   margin-bottom: 10px;
-  
 }
 
 .testimonial-content .client-review{
@@ -520,7 +468,7 @@ body {
   width: 48%;
   background-color: #222831;
   color: white;
-  padding: 40px; /* Increase the padding for larger boxes */
+  padding: 40px; 
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -548,10 +496,6 @@ body {
   border-radius: 100%;
   border: 5px solid #ffbe33;
   position: relative;
-  /* width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover; */
 }
 
 .client-image::before{
@@ -565,9 +509,6 @@ body {
   -webkit-transform: rotate(45deg) translateX(-50%);
   transform: rotate(45deg) translateX(-50%);
 }
-
-
-/* ... existing styles ... */
 
 .testimonial-box.hidden {
   display: none;

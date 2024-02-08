@@ -94,12 +94,12 @@
   }
 
   .success-message {
-    background-color: #d4edda; /* Bootstrap success color */
-    color: #155724; /* Bootstrap dark green color */
-    border: 1px solid #c3e6cb; /* Bootstrap light green color */
+    background-color: #d4edda;
+    color: #155724; 
+    border: 1px solid #c3e6cb; 
     padding: 5px;
-    margin-top: 10px; /* Add some space between the message and the form */
-    border-radius: 5px; /* Optional: Add rounded corners */
+    margin-top: 10px; 
+    border-radius: 5px; 
     margin-bottom: 50px;
   }
   
@@ -125,4 +125,3 @@
      margin-top: -41px; 
     color: red;
   }
-  

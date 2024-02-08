@@ -1,7 +1,5 @@
-// src/app/contactus/contactus.component.ts
 import { Component } from '@angular/core';
 import { ContactUsService } from '../newservices/contactus.service';
-
 
 @Component({
   selector: 'app-contactus',
@@ -27,17 +25,14 @@ export class ContactusComponent {
   errorMessage = '';
   successMessage = '';
   
-
   constructor(private contactUsService: ContactUsService) {}
 
   submitContactForm() {
-    // Reset messages on each form submission
     this.errorMessage = '';
     this.successMessage = '';
 
     // Reset all error messages
     this.resetErrorMessages();
-
      // Check form data for validation errors
      if (!this.isValidFormData()) {
       this.formSubmitted = true;
@@ -64,7 +59,6 @@ export class ContactusComponent {
         console.error('Error submitting form:', error);
         this.errorMessage = 'Failed to submit the form. Please try again later.';
         this.formSubmitted = true;
-        
       }
     );
   }
@@ -76,8 +70,6 @@ export class ContactusComponent {
     this.emailError = '';
     this.serviceError='';
     this.messageError = '';
-
-    // Reset other error messages...
   }
 
   resetForm() {
@@ -92,10 +84,6 @@ export class ContactusComponent {
   }
 
   isValidFormData(): boolean {
-
-     // Add your validation logic here
-    // For example, check if required fields are filled
-   
     // Name validation
     if (this.formData.name.trim() === '') {
       this.nameError = 'Name is required.';
@@ -137,16 +125,6 @@ export class ContactusComponent {
       this.messageError = 'Message length should be between 5 and 500 characters.';
       return false;
     }
-
     return true;
   }
   }
-    
-
-  // isFormSubmitted(): boolean {
-  //   // Use the service to check the form submission status
-  //   return this.contactUsService.getFormStatus();
-  // }
-
-  
-

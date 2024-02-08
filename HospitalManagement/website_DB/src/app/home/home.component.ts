@@ -1,10 +1,6 @@
 import { Component, ElementRef, Renderer2, OnInit } from '@angular/core';
-// your-component.component.ts
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import { Router } from '@angular/router';
 import { ContactUsService } from '../newservices/contactus.service';
-import { trigger, state, style, animate, transition } from '@angular/animations';
-
 
 @Component({
   selector: 'app-home',
@@ -21,20 +17,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     'Enjoy convenient access to doctors for hassle-free consultations and check-ups, ensuring your health is a priority on your terms.'
    ];
 
-  
-
-   
-
-  // onButtonClick() {
-  //   // Add the functionality you want to execute when the button is clicked
-  //   console.log('Button clicked!');
-  //   // You can add more logic or navigate to another page, etc.
-  // }
-
-  // private currentIndex = 0; // Initialize index outside of the setupScrolling function
-  private intervalId: any; // Variable to store the interval ID
-
-  
+   private intervalId: any;
 
   testimonials = [
     { image: 'assets/100.png', alt: 'Client 1', review: 'Grateful for the convenience and compassion of the home care service. The personalized attention from the visiting doctor made my recovery at home a seamless and positive experience.', name: 'Prakash N', place:'Banglore' ,visible: true },
@@ -43,16 +26,10 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     { image: 'assets/400.png', alt: 'Client 4', review: 'Thankful for the skilled nursing service at home, a reassuring and efficient support system that made my recovery seamless and comfortable. Thank you for the best service.',  name: 'Nilam S', place:'Banglore' ,visible: false }
   ];
 
-  
   currentIndex: number = 0;
   currentSetIndex = 0;
 
-
-
-
-
   services =[
-      
     {
       dataCategory: 'nurse',
       title: 'Skilled Nursing',
@@ -123,13 +100,12 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 
   // Replace 'any[]' with your actual service model
   filteredServices: any[] = this.services;
-  activeFilter: string = 'all'; // Default to 'all' to show all services
+  activeFilter: string = 'all';
 
   filterServices(category: string): void {
     this.activeFilter = category;
-
     if (category === 'all') {
-      this.filteredServices = this.services; // Show all services for 'all' category
+      this.filteredServices = this.services;
     } else {
       this.filteredServices = this.services.filter(service => service.dataCategory === category);
     }
@@ -152,14 +128,12 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   errorMessage = '';
   successMessage = '';
 
-
   constructor(
     private renderer: Renderer2,
     private el: ElementRef,
     private router: Router,
     private contactUsService: ContactUsService
   ) {}
-
 
   ngOnInit() {
     this.setupScrolling();
@@ -187,8 +161,6 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     }, 100);
   }
 
-  
-
   showTestimonials(): void {
     setInterval(() => {
       // Set the visibility of the current set of testimonials to false
@@ -202,13 +174,9 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     }, 3000); // Adjust the interval (milliseconds) for scrolling
   }
 
-  
-
-
   private setupScrolling() {
     this.updateContent();
     this.transitionText();
-
     // Clear the existing interval if it exists
     if (this.intervalId) {
       clearInterval(this.intervalId);
@@ -222,9 +190,6 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
       this.updateActiveDot();
     }, 5000); // Interval after displaying the third text
   }
-
-  
-
 
   private setupDotClickHandlers() {
     this.scrollDots.forEach((dot, index) => {
@@ -255,13 +220,10 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 
   //bookservice form section
   submitContactForm() {
-    // Reset messages on each form submission
     this.errorMessage = '';
     this.successMessage = '';
-
     // Reset all error messages
     this.resetErrorMessages();
-
      // Check form data for validation errors
      if (!this.isValidFormData()) {
       this.formSubmitted = true;
@@ -276,9 +238,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
         this.successMessage = 'Form submitted successfully!';
         this.formSubmitted = true;
         this.resetForm();
-        
-
-         // Automatically clear the success message after 5 seconds (5000 milliseconds)
+        // Automatically clear the success message after 5 seconds (5000 milliseconds)
         setTimeout(() => {
           this.successMessage = '';
           this.formSubmitted = false;
@@ -289,7 +249,6 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
         console.error('Error submitting form:', error);
         this.errorMessage = 'Failed to submit the form. Please try again later.';
         this.formSubmitted = true;
-        
       }
     );
   }
@@ -301,10 +260,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     this.emailError = '';
     this.serviceError='';
     this.messageError = '';
-
-    // Reset other error messages...
   }
-
 
   resetForm() {
     // Reset the form data after successful submission
@@ -318,10 +274,6 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   }
 
   isValidFormData(): boolean {
-
-    // Add your validation logic here
-   // For example, check if required fields are filled
-  
    // Name validation
    if (this.formData.name.trim() === '') {
      this.nameError = 'Name is required.';
@@ -344,7 +296,6 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
    } else if (!/^[0-9]{10}$/.test(this.formData.phoneNumber.trim())) {
      this.numberError = 'Phone number should contain 10 digits.';
      return false;
-   
    }
 
    // Email validation
@@ -364,9 +315,6 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
      this.messageError = 'Message length should be between 5 and 500 characters.';
      return false;
    }
-
    return true;
  }
-  
-
 }
