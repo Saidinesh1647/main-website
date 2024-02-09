@@ -10,6 +10,9 @@ import { BookingmanagmentComponent } from './bookingmanagment/bookingmanagment.c
 import{HttpClientModule}from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 import { ServicesComponent } from './services/services.component';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,13 +22,16 @@ import { ServicesComponent } from './services/services.component';
     HomeComponent,
     BookingmanagmentComponent,
     ServicesComponent,
+    LoginComponent,
+    RegisterComponent,
     
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
    
   ],
   providers: [],
