@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="92bc5db2-019c-4332-bae2-a7e165a76d74" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/300.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/Aboutus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/BasicNursing.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/Counceling.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/Critical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/Doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/DocVisit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/Lab.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/MedicalEquipment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/Medicine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/Nurse5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/Nutritionist.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/SkilledNurse1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/WoundCare.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/bg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/physiotherapy.jpg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2c59ZY6EjU5IcGjpgVCEywvFISW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92bc5db2-019c-4332-bae2-a7e165a76d74" name="Changes" comment="" />
+      <created>1707390628929</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707390628929</updated>
+      <workItem from="1707390630717" duration="673000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
