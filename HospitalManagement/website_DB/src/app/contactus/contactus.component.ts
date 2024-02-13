@@ -43,7 +43,7 @@ export class ContactusComponent {
     this.contactUsService.submitContactForm(this.formData).subscribe(
       (response) => {
         // Handle success
-        console.log('Success:', response);
+        //console.log('Success:', response);
         this.successMessage = 'Form submitted successfully!';
         this.formSubmitted = true;
         this.resetForm();
@@ -56,7 +56,7 @@ export class ContactusComponent {
       },
       (error) => {
         // Handle other errors
-        console.error('Error submitting form:', error);
+        //console.error('Error submitting form:', error);
         this.errorMessage = 'Failed to submit the form. Please try again later.';
         this.formSubmitted = true;
       }

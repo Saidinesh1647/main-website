@@ -3,11 +3,10 @@
     padding: 20px;
 }
 .card{
-    background-color: rgba(135, 206, 250, 0.5);
-    margin-top: 32%;
+    background-color: rgb(168, 240, 175);
 }
 strong{
-    color: rgb(37, 15, 135);
+    color: rgb(238, 168, 155);
     margin-left: 119px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

@@ -60,7 +60,7 @@ app.post('/addbookservice/submit', async (req, res) => {
 
     res.status(201).json(savedContact);
   } catch (error) {
-    console.error(error);
+    //console.error(error);
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
@@ -72,5 +72,5 @@ app.get('/', (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  //console.log(`Server is running on port ${PORT}`);
 });

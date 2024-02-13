@@ -215,7 +215,7 @@ import { ContactUsService } from '../newservices/contactus.service';
   bookNow(): void {
     // Implement the functionality when the "Book Now" button is clicked
     // You can handle form submission, send data to a server, etc.
-    console.log('Booking service...');
+    //console.log('Booking service...');
   }
 
   //bookservice form section
@@ -234,7 +234,7 @@ import { ContactUsService } from '../newservices/contactus.service';
     this.contactUsService.submitContactForm(this.formData).subscribe(
       (response) => {
         // Handle success
-        console.log('Success:', response);
+        //console.log('Success:', response);
         this.successMessage = 'Form submitted successfully!';
         this.formSubmitted = true;
         this.resetForm();
@@ -246,7 +246,7 @@ import { ContactUsService } from '../newservices/contactus.service';
       },
       (error) => {
         // Handle other errors
-        console.error('Error submitting form:', error);
+        //console.error('Error submitting form:', error);
         this.errorMessage = 'Failed to submit the form. Please try again later.';
         this.formSubmitted = true;
       }

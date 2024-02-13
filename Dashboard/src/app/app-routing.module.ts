@@ -9,15 +9,17 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
 
+
 const routes: Routes = [
-  { path: '',redirectTo: '/register', pathMatch: 'full'},
-  { path: 'register', component:RegisterComponent},
-  { path: 'login', component: LoginComponent },
+ { path: 'login', component: LoginComponent },
+ { path: 'register', component: RegisterComponent},
+ // { path: '', redirectTo: '/login', pathMatch: 'full' }, // Redirect to login page by d
   { path: 'home', component: HomeComponent },
   { path: 'nav', component: NavComponent },
   { path: 'Dashboard', component: DashboardComponent },
   { path: 'Dashboard/bookingmanagment', component: BookingmanagmentComponent },
-  { path: 'Dashboard/Services', component: ServicesComponent },
+  { path: 'Dashboard/Services', component: ServicesComponent }
+ 
 ];
 
 @NgModule({
