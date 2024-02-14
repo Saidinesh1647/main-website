@@ -5,22 +5,21 @@
       <tr>
         <th>Request-Date</th>
         <th>Name</th>
-        <th>Phone-no</th>
         <th>EmailAddress</th>
         <th>Services</th>
-        <th>Message</th>
-       
-       </tr>
+        <th>Phone-no</th>
+
+      </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let user of users">
-        <td>{{ user.date }}</td>
-        <td>{{ user.name }}</td>
-        <td>{{user.phoneNumber}}</td>
-        <td> {{ user.email }}</td>
-        <td> {{ user.service }}</td>
-        <td>{{ user.message }}</td>
+      <tr *ngFor="let user of user">
+        <td>{{ user.Date }}</td>
+        <td>{{user.Name }}</td>
+        <td> {{ user.EmailId }}</td>
+        <td> {{ user.services }}</td>
+        <td>{{ user.Phno }} </td>
       </tr>
+
     </tbody>
   </table>
 </div>

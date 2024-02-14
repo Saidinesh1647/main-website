@@ -1,61 +1,87 @@
+/* login.component.css */
+/* * {
+  background-image: url('../assets/loginbackimg.jpg');
+} */
+
+/* Center the form */
 .login-container {
-  width: 300px;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust the height as needed */
+}
+.login-container {
+  background-image: url('../../assets/loginbackimg.jpg');
+  background-size: cover;
+  }
+  
+
+  /* Add additional background properties or styles as needed */
+
+
+/* Animated water effect */
+form {
+  position: relative;
+  width: 300px; /* Adjust the width as needed */
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px; 
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #254798; /* Water background color */
+  box-shadow: 0 0 20px rgba(6, 5, 5, 0.1);
+  animation: waterEffect 3s infinite alternate;
+
 }
 
+/* @keyframes waterEffect {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-120px);
+  }
+} */
 
-h2 {
-  text-align: center;
-}
-
+/* Form styling */
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 label {
   display: block;
+  margin-bottom: 5px;
   font-weight: bold;
+  color: #ecf0f1; /* Label text color */
 }
 
-
-input[type="text"],
-input[type="password"] {
+input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #0c84e6;
-  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #3498db; /* Input border color */
+  border-radius: 4px;
+  background-color: #ecf0f1; /* Input background color */
+  color: #2c3e50; /* Input text color */
 }
 
 button {
-  width: 100%;
-  padding: 10px;
+  background-color: #3498db; /* Button background color */
+  color: white;
+  padding: 10px 35px;
   border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block; /* Ensure it's a block-level element */
+  margin: 0 auto; /* Center the button horizontally */
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #2980b9; /* Button hover background color */
 }
 
-h5 {
-  color: rgb(5, 2, 10);
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-}
-.card{
-  background-color: rgb(192, 232, 246);
-  border:2px solid rgb(10, 18, 23)
+.error-message {
+  color: red;
+  margin-top: 5px;
 }
 
-
-
-
-
- 
+/* Add additional styles as needed */

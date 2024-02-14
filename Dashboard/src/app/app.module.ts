@@ -12,6 +12,10 @@ import { ServicesComponent } from './services/services.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
+import { AuthGuard } from './guards/auth.guard';
+import { Router } from '@angular/router';
+import { AuthService } from './auth.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +27,10 @@ import { RegisterComponent } from './register/register.component';
     ServicesComponent,
     LoginComponent,
     RegisterComponent,
+    
+
+
+
 
   ],
   imports: [
@@ -33,9 +41,14 @@ import { RegisterComponent } from './register/register.component';
     ReactiveFormsModule
 
   ],
-  providers: [],
+  providers: [AuthGuard,AuthService],
   bootstrap: [AppComponent]
+
 })
-export class AppModule {
+export class AppModule
+ {
+  constructor(private router: Router) {
+    console.log(this.router.config);
 
 }
+ }

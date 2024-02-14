@@ -7,20 +7,26 @@ import { NavComponent } from './nav/nav.component';
 import { ServicesComponent } from './services/services.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-
-
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
- { path: 'login', component: LoginComponent },
- { path: 'register', component: RegisterComponent},
- // { path: '', redirectTo: '/login', pathMatch: 'full' }, // Redirect to login page by d
-  { path: 'home', component: HomeComponent },
-  { path: 'nav', component: NavComponent },
-  { path: 'Dashboard', component: DashboardComponent },
-  { path: 'Dashboard/bookingmanagment', component: BookingmanagmentComponent },
-  { path: 'Dashboard/Services', component: ServicesComponent }
- 
+  { path: 'login', component: LoginComponent },
+  {
+    path: 'nav',
+    component: NavComponent,
+    children: [
+      { path: 'dashboard', component: DashboardComponent },
+      { path: 'bookingmanagment', component: BookingmanagmentComponent },
+      { path: 'services', component: ServicesComponent },
+      { path: 'home', component: HomeComponent },
+      {path: 'Dashboard/login', component: LoginComponent}
+    ]
+  },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '**', redirectTo: 'login' }
 ];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
