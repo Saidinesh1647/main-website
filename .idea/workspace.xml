@@ -4,27 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92bc5db2-019c-4332-bae2-a7e165a76d74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/200.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/300.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/Aboutus.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/BasicNursing.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/Counceling.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/Critical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/Doc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/DocVisit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/Lab.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/MedicalEquipment.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/Medicine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/Nurse5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/Nutritionist.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/SkilledNurse1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/WoundCare.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/bg2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/assets/physiotherapy.jpg" beforeDir="false" />
+    <list default="true" id="e908fce1-7c38-47ca-968b-c860c893da82" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/HospitalManagement/website_DB/src/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HospitalManagement/website_DB/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,37 +20,42 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
-  <component name="ProjectId" id="2c59ZY6EjU5IcGjpgVCEywvFISW" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2cMenRWflgFBUuNf9uoQ9FFObXb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\hp\\Desktop\\main-website\\HospitalManagement\\website_DB\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="92bc5db2-019c-4332-bae2-a7e165a76d74" name="Changes" comment="" />
-      <created>1707390628929</created>
+      <changelist id="e908fce1-7c38-47ca-968b-c860c893da82" name="Changes" comment="" />
+      <created>1707926042272</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1707390628929</updated>
-      <workItem from="1707390630717" duration="673000" />
+      <updated>1707926042272</updated>
+      <workItem from="1707926043424" duration="6472000" />
+      <workItem from="1707988958228" duration="782000" />
+      <workItem from="1707990661712" duration="1239000" />
+      <workItem from="1707993502781" duration="60000" />
+      <workItem from="1707993580331" duration="132000" />
     </task>
     <servers />
   </component>

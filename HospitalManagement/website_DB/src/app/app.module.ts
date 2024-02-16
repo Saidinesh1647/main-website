@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { ResponsiveImageComponent } from './responsive-image/responsive-image.component';
 //import { BookserviceComponent } from './bookservice/bookservice.component';
 
 @NgModule({
@@ -18,6 +19,7 @@ import { ContactusComponent } from './contactus/contactus.component';
     ServicesComponent,
     AboutusComponent,
     ContactusComponent,
+    ResponsiveImageComponent,
     // BookserviceComponent
   ],
   imports: [
