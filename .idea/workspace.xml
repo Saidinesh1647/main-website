@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e908fce1-7c38-47ca-968b-c860c893da82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HospitalManagement/website_DB/src/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalManagement/website_DB/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/HospitalManagement/website_DB/src/app/app.module.ts" afterDir="false" />
+    <list default="true" id="38e74bb5-7b32-462f-841a-e5cb236d16b8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/main-website.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,42 +20,36 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 0
-}</component>
-  <component name="ProjectId" id="2cMenRWflgFBUuNf9uoQ9FFObXb" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2cRWYSQ00BWBNWUZBXGa6SZwzbO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\hp\\Desktop\\main-website\\HospitalManagement\\website_DB\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e908fce1-7c38-47ca-968b-c860c893da82" name="Changes" comment="" />
-      <created>1707926042272</created>
+      <changelist id="38e74bb5-7b32-462f-841a-e5cb236d16b8" name="Changes" comment="" />
+      <created>1708074919000</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1707926042272</updated>
-      <workItem from="1707926043424" duration="6472000" />
-      <workItem from="1707988958228" duration="782000" />
-      <workItem from="1707990661712" duration="1239000" />
-      <workItem from="1707993502781" duration="60000" />
-      <workItem from="1707993580331" duration="132000" />
+      <updated>1708074919000</updated>
+      <workItem from="1708074920246" duration="655000" />
     </task>
     <servers />
   </component>
